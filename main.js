@@ -1,3 +1,5 @@
+console.log("hello");
+
 const pets = [
     {
       id: 1,
@@ -245,4 +247,4 @@ const pets = [
 
   for (let i = 0; i < pets.length; i++) {
     app.innerHTML += <p>${pets[i].id} ${pets[i].name} ${pets[i].color} ${pets[i].specialSkill} ${pets[i].type} ${pets[i].imageUrl}</p>
-  };
+  }; 
