@@ -241,8 +241,8 @@ const pets = [
     }
   ];
 
-let i = 0;
+  const app = document.querySelector('#app');
 
-while (i <pets.length) {
-  console.log(pets[i]); i++;
-}
+  for (let i = 0; i < pets.length; i++) {
+    app.innerHTML += <p>${pets[i].id} ${pets[i].name} ${pets[i].color} ${pets[i].specialSkill} ${pets[i].type} ${pets[i].imageUrl}</p>
+  };
