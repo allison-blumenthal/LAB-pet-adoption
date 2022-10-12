@@ -241,3 +241,8 @@ const pets = [
     }
   ];
 
+let i = 0;
+
+while (i <pets.length) {
+  console.log(pets[i]); i++;
+}
