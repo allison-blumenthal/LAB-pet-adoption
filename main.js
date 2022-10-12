@@ -10,7 +10,7 @@ const pets = [
       favorite: true
     },
     {
-        id: 2,
+      id: 2,
       name: "Trouble",
       color: "Brown",
       specialSkill: "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
@@ -275,5 +275,16 @@ const pets = [
   const app = document.querySelector("#app");
 
   for (let i = 0; i < pets.length; i++) {
-    app.innerHTML += `${pets[i].id} ${pets[i].name} ${pets[i].color} ${pets[i].specialSkill} ${pets[i].type} ${pets[i].imageUrl}`;
-  }
+    app.innerHTML += 
+    `<div class="card text-center">
+        <div class="card-header">
+          ${pets[i].name}
+        </div>
+    <div class="card-body">
+      <img src=${pets[i].imageUrl} alt="Picture of pet for adoption">
+      <p class="card-text">${pets[i].color}</p>
+      <p>${pets[i].specialSkill}</p>
+      <a href="#" class="btn btn-primary">${pets[i].type}</a>
+    </div>
+  </div>`
+}
