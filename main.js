@@ -1,3 +1,4 @@
+
 const pets = [
     {
       id: 1,
@@ -5,15 +6,15 @@ const pets = [
       color: "Green",
       specialSkill: "Gives sincere apologies.",
       type: "cat",
-      imageUrl: "http://kittentoob.com/wp-content/uploads/2015/06/funny-cat-with-a-towel.jpg",
+      imageUrl: "http://kittentoob.com/wp-content/uploads/2015/06/funny-cat-with-a-towel.jpg"
     },
     {
-        id: 2,
+      id: 2,
       name: "Trouble",
       color: "Brown",
       specialSkill: "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
       type: "dino",
-      imageUrl: "http://www.jozilife.co.za/wp-content/uploads/The-Dino-Expo.jpg",
+      imageUrl: "https://img.freepik.com/premium-photo/fun-dinosaur-3d-illustration_183364-109144.jpg?w=996"
     },
     {
       id: 3,
@@ -61,7 +62,7 @@ const pets = [
       color: "Grey",
       specialSkill: "Comfortable in the outdoors for up to eight hours.",
       type: "dino",
-      imageUrl: "http://www.theouthousers.com/images/jck//ThanosCopter/news/grumpasaur.jpg"
+      imageUrl: "https://assets.dragoart.com/images/4264_501/how-to-draw-a-cute-dinosaur_5e4c8137d81996.59879101_19287_3_3.jpg"
     },
     {
       id: 9,
@@ -85,7 +86,7 @@ const pets = [
       color: "Orange",
       specialSkill: "Can be around food without staring creepily at it.",
       type: "dino",
-      imageUrl: "http://www.cantref.com/userfiles/events/walking%20dino.jpg?w=600"
+      imageUrl: "https://img.freepik.com/premium-vector/dinosaur-cute-baby-character-isolated-object-vector-illustration_514903-541.jpg?w=740"
     },
     {
       id: 12,
@@ -125,7 +126,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Drives at a safe rate of speed in snow or rain.",
       type: "dino",
-      imageUrl: "https://images.readwrite.com/wp-content/uploads/2018/03/t-rex-dino-quiz-e1490854556549.jpg"
+      imageUrl: "https://i.etsystatic.com/17052224/r/il/7605ee/1921932878/il_570xN.1921932878_j3bi.jpg"
     },
     {
      id: 17,
@@ -133,7 +134,7 @@ const pets = [
       color: "Yellow",
       specialSkill: "Does not freak out if you haven’t seen his favorite movie (The Big Lebowski).",
       type: "cat",
-      imageUrl: "http://www.funnycatsite.com/pictures/Close_Up_Yawn.jpg"
+      imageUrl: "https://image.petmd.com/files/2187242989_2eacb23b1e_z-slide1.jpg"
     },
     {
       id: 18,
@@ -141,7 +142,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Proficient in air guitar",
       type: "dino",
-      imageUrl: "https://www.nation.co.ke/image/view/-/4078922/highRes/1742693/-/maxw/600/-/1453yvh/-/DINO.jpg"
+      imageUrl: "https://image.similarpng.com/very-thumbnail/2020/08/Hand-drawn-dinosaur-playing-guitar-on-transparent-background-PNG.png"
     },
     {
       id: 19,
@@ -157,7 +158,7 @@ const pets = [
       color: "Black",
       specialSkill: "Uses litter box at appropriate hours.",
       type: "cat",
-      imageUrl: "http://www.funnycatsite.com/pictures/Lazy_White_Cat.jpg"
+      imageUrl: "https://static.boredpanda.com/blog/wp-content/uploads/2020/03/5e6782b89ee19_1nyn34drl0l31__700.jpg"
     },
     {
       id: 21,
@@ -165,7 +166,7 @@ const pets = [
       color: "Red",
       specialSkill: "Owns a Nintendo Power Glove.",
       type: "dino",
-      imageUrl: "https://img.buzzfeed.com/buzzfeed-static/static/2015-11/2/12/enhanced/webdr15/anigif_enhanced-29802-1446485228-10.gif?crop=250:165;0,0&downsize=715"
+      imageUrl: "https://static.vecteezy.com/system/resources/thumbnails/008/132/085/small_2x/dinosaur-cartoon-play-a-game-video-games-controller-nerd-geek-gamer-t-rex-cartoon-free-vector.jpg"
     },
     {
         id: 22,
@@ -173,7 +174,7 @@ const pets = [
       color: "Orange",
       specialSkill: "Is comfortable with jokes about his receding hairline.",
       type: "cat",
-      imageUrl: "http://funnyanimalphoto.com/wp-content/uploads/2013/08/cat_caught_mouse_thegatewaypundit.jpg"
+      imageUrl: "https://icatcare.org/app/uploads/2018/07/Elderly-cats.png"
     },
     {
         id: 23,
@@ -189,7 +190,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Participates in karaoke but does not force others to go out to karaoke.",
       type: "dog",
-      imageUrl: "http://www.dogbreedplus.com/dog_breeds/images/basset-hound-4.jpg"
+      imageUrl: "https://www.rover.com/blog/wp-content/uploads/2018/05/shy-karaoke-dog-is-all-of-us-HERO-960x540.jpg"
     },
     {
       id: 25,
@@ -197,7 +198,7 @@ const pets = [
       color: "Red",
       specialSkill: "Knows the words to 4 rap songs.",
       type: "cat",
-      imageUrl: "http://funbk.s3.amazonaws.com/wp-content/uploads/2016/06/funny-cat-video-which-will-make-you-laugh-louder.jpg"
+      imageUrl: "https://variety.com/wp-content/uploads/2013/06/keanu-2.jpg"
     },
     {
         id: 26,
@@ -237,7 +238,23 @@ const pets = [
       color: "Red",
       specialSkill: "Doesn’t get weirded out by the word “moist.”",
       type: "dino",
-      imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
+      imageUrl: "https://cdn.pixabay.com/photo/2016/04/01/09/29/cartoon-1299393__340.png"
     }
   ];
 
+  const app = document.querySelector("#app");
+
+  for (let i = 0; i < pets.length; i++) {
+    app.innerHTML += 
+    `<div class="card text-center">
+        <div class="card-header">
+          ${pets[i].name}
+        </div>
+    <div class="card-body">
+      <img src=${pets[i].imageUrl} alt="Picture of pet for adoption">
+      <p class="card-text">${pets[i].color}</p>
+      <p>${pets[i].specialSkill}</p>
+      <a href="#" class="btn btn-primary">${pets[i].type}</a>
+    </div>
+  </div>`
+}
