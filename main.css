@@ -1,29 +1,19 @@
 body {
   background-color: aliceblue;
-  font-family: 'Fuzzy Bubbles', cursive;;
+  font-family: 'Fuzzy Bubbles', cursive;
 }
 
 .btn {
   border: white 3px solid;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .button-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin: 20px;
-}
-
-.text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 20px;
-}
-
-p {
-  font-size: 20px;
-  font-weight: bolder;
-  text-align: center;
 }
 
 .form-container {
@@ -33,41 +23,74 @@ p {
   margin: 10px;
 }
 
-.card-button-container {
+.app-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-container {
+  height: auto;
+  width: 400px;
+  
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
   margin: 20px;
 }
 
+.card-button-container {
+  background-color: lavender;
+  padding: 0px 5px 30px 5px;
+}
+
 .card-header {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
+  background-color: black;
+  color: white;
+  }
+
+.card-body {
+  background-color: lavender;
 }
 
 #all-button {
-  background-color: green;
+  background-color: hotpink;
 }
 
 #cat-button {
-  background-color: indigo;
+  background-color: purple;
 }
 
 #dog-button {
-  background-color: navy;
+  background-color: blue;
 }
 
 #dino-button {
-  background: darkred;
+  background: darkorange;
 }
 
 #submit-button {
-  background: navy;
+  background: green;
   margin: 10px;
   align-self: center;
 }
 
 img {
   float: middle;
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  margin: 30px;
+  border-radius: 15%;
+  padding: 20px;
 }

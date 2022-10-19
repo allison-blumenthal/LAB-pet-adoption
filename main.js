@@ -271,21 +271,21 @@ const renderToDom = (divId, htmlToRender) => {
 const petsOnDom = (array) => {
   let domString = "";
   for (const animal of array) {
-    domString += `<div class="card text-center">
-             <div class="card-header">
-               ${animal.name}
-             </div>
-         <div class="card-body">
-           <img src=${animal.imageUrl} alt="Picture of pet for adoption>
-           <div class="text-container">
-            <p class="card-text">${animal.color}</p>
-            <p>${animal.specialSkill}</p>
-           </div>
-           <div class="card-button-container">
-            <a href="#" class="btn btn-primary">${animal.type}</a>
-            <button type="button" class="btn btn-danger" id="delete--${animal.id}">Delete</button>
-           </div>
-         </div>
+    domString += 
+      `<div class="card text-center card-container">
+          <div class="card-header">${animal.name}
+          </div>
+          <div class="card-body">
+            <img src=${animal.imageUrl} alt="Picture of pet for adoption>
+            <div class="text-container">
+              <p class="card-text">${animal.color}</p>
+              <p>${animal.specialSkill}</p>
+            </div>
+            <div class="card-button-container">
+              <a href="#" class="btn btn-primary">${animal.type}</a>
+              <button type="button" class="btn btn-danger" id="delete--${animal.id}">delete</button>
+            </div>
+          </div>
        </div>`;
   }
 
