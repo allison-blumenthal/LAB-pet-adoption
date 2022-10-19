@@ -1,9 +1,45 @@
 body {
   background-color: aliceblue;
+  font-family: 'Fuzzy Bubbles', cursive;;
 }
 
 .btn {
   border: white 3px solid;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+
+.card-button-container {
+  margin: 20px;
+}
+
+.card-header {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 #all-button {
@@ -24,4 +60,14 @@ body {
 
 #submit-button {
   background: navy;
+  margin: 10px;
+  align-self: center;
+}
+
+img {
+  float: middle;
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  margin: 30px;
 }
