@@ -277,16 +277,14 @@ const petsOnDom = (array) => {
               <div class="card-header">${animal.name}</div>
               <div class="card-body">
                   <img src=${animal.imageUrl} alt="Picture of pet for adoption>
-                  <div class="text-container">
-                    <p class="card-text">${animal.color}</p>
-                    <p>${animal.specialSkill}</p>
-                  </div>
+                  <p class="card-text">${animal.color}</p>
+                  <p>${animal.specialSkill}</p>
                   <div class="card-button-container">
                     <button type="button" class="btn btn-danger" id="delete--${animal.id}">delete</button>
                   </div>
-                </div>
-              <div class="card-footer text-muted">${animal.type}
-             </div>
+                  <div class="card-footer text-muted">${animal.type}
+                  </div>
+              </div>
           </div>
       </div>`;
   }
