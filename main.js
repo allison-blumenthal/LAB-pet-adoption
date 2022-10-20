@@ -282,7 +282,7 @@ const petsOnDom = (array) => {
                   <div class="card-button-container">
                     <button type="button" class="btn btn-danger" id="delete--${animal.id}">delete</button>
                   </div>
-                  <div class="card-footer text-muted">${animal.type}
+                  <div class="card-footer pet-type ${animal.type}">${animal.type}
                   </div>
               </div>
           </div>

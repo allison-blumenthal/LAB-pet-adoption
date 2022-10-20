@@ -81,8 +81,10 @@ img {
 
 .card-footer {
   font-size: 20px;
-  padding: 10px;
   text-align: center;
+  font-weight: bold;
+  color: white;
+  border: white 3px solid;
 }
 
 #all-button {
@@ -105,4 +107,16 @@ img {
   background: green;
   margin: 10px;
   align-self: center;
+}
+
+.dog {
+  background-color: blue;
+}
+
+.cat {
+  background-color: purple;
+}
+
+.dino {
+  background-color: darkorange;
 }
