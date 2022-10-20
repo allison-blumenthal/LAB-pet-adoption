@@ -242,22 +242,26 @@ const pets = [
     }
   ];
 
-   const app = document.querySelector("#app");
+  // *NOTE* The for loop below is obsolete now that I have the petsOnDom function that renders dynamically
 
-   for (let i = 0; i < pets.length; i++) {
-     app.innerHTML += 
-   `<div class="card text-center">
-        <div class="card-header">
-           ${pets[i].name}
-         </div>
-     <div class="card-body">
-       <img src=${pets[i].imageUrl} alt="Picture of pet for adoption">
-       <p class="card-text">${pets[i].color}</p>
-       <p>${pets[i].specialSkill}</p>
-       <a href="#" class="btn btn-primary">${pets[i].type}</a>
-     </div>
-   </div>`
- }
+   //const app = document.querySelector("#app");
+
+//    for (let i = 0; i < pets.length; i++) {
+//      app.innerHTML += 
+//    `<div class="card text-center">
+//         <div class="card-header">
+//            ${pets[i].name}
+//          </div>
+//      <div class="card-body">
+//        <img src=${pets[i].imageUrl} alt="Picture of pet for adoption">
+//        <p class="card-text">${pets[i].color}</p>
+//        <p>${pets[i].specialSkill}</p>
+//        <a href="#" class="btn btn-primary">${pets[i].type}</a>
+//      </div>
+//    </div>`
+//  }
+
+ // dynamically rendering to the DOM
 
 const renderToDom = (divId, htmlToRender) => {
   const selectedDiv = document.querySelector(divId);
@@ -267,22 +271,30 @@ const renderToDom = (divId, htmlToRender) => {
 const petsOnDom = (array) => {
   let domString = "";
   for (const animal of array) {
-    domString += `<div class="card text-center">
-             <div class="card-header">
-               ${animal.name}
-             </div>
-         <div class="card-body">
-           <img src=${animal.imageUrl} alt="Picture of pet for adoption">
-           <p class="card-text">${animal.color}</p>
-           <p>${animal.specialSkill}</p>
-           <a href="#" class="btn btn-primary">${animal.type}</a>
-         </div>
-       </div>`;
+    domString += 
+      `<div class="card-container">
+          <div class="card text-center">
+              <div class="card-header">${animal.name}</div>
+              <div class="card-body">
+                  <img src=${animal.imageUrl} alt="Picture of pet for adoption>
+                  <p class="card-text">${animal.color}</p>
+                  <p>${animal.specialSkill}</p>
+                  <div class="card-button-container">
+                    <button type="button" class="btn btn-danger" id="delete--${animal.id}">delete</button>
+                  </div>
+                  <div class="card-footer pet-type ${animal.type}">${animal.type}
+                  </div>
+              </div>
+          </div>
+      </div>`;
   }
 
   renderToDom("#app", domString);
 }
 
+petsOnDom(pets);
+
+// filtering with buttons
 
 const filter = (array, petTypeString) => {
   const petTypeArray = [];
@@ -319,3 +331,51 @@ dinosButton.addEventListener('click', () => {
   const petsAreDinos = filter(pets, 'dino');
   petsOnDom(petsAreDinos);
 });
+
+// adding a form to create new cards 
+
+const form = document.querySelector('form');
+
+const createPet = (e) => {
+  e.preventDefault();
+
+  const newPetObj = {
+    id: pets.length + 1,
+    name: document.querySelector("#name").value,
+    color: document.querySelector("#color").value,
+    specialSkill: document.querySelector("#specialSkill").value,
+    type: document.querySelector("#type").value,
+    imageUrl: document.querySelector("#imageUrl").value
+  }
+
+  pets.push(newPetObj);
+  petsOnDom(pets);
+  form.reset();
+}
+
+const submitButton = document.querySelector("#submit-button");
+
+form.addEventListener('submit', createPet);
+
+// adding delete buttons
+
+const app = document.querySelector("#app");
+
+app.addEventListener('click', (e) => {
+
+  if (e.target.id.includes("delete")) {
+    const [, id] = e.target.id.split("--");
+
+    const index = pets.findIndex(e => e.id === Number(id));
+
+    pets.splice(index, 1);
+
+    petsOnDom(pets);
+  }
+});
+
+const startApp = () => {
+  petsOnDom(pets);
+}
+
+startApp();
